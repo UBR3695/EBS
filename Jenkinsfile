@@ -10,6 +10,13 @@ pipeline {
                 }
             }
         }
+        stage('install boto3') {
+            steps{
+                script{
+                    sh 'pip install boto3'
+                }
+            }
+        }   
         stage('Run Python script') {
             steps{
                 script {
