@@ -14,7 +14,7 @@ pipeline {
             steps{
                 script {
                     // Assuming your Python script is in the same directory as your Jenkinsfile
-                    sh 'python my_script.py'
+                    sh 'EBS.py'
                 }
             }
         }
